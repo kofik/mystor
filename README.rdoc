@@ -6,20 +6,31 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-linux-gnu]
+
+*Rails version
+4.1.8
 
 * System dependencies
+Here Ubuntu Ruby Rails Spree
 
 * Configuration
+gem 'spree_auth_devise', :git => "git://github.com/spree/spree_auth_devise"
 
-* Database creation
-
+* Database creation at initial rails project
+rails _4.1.8_ new mystor -d mysql
 * Database initialization
 
 * How to run the test suite
+Test will be done with Cucumber
 
 * Services (job queues, cache servers, search engines, etc.)
+Using default Webrick will be use Passenger and Cherokee
+Search engine to be use: solr
 
 * Deployment instructions
+Read Ruby and Rails installation here 
+and the official documentation
 
 * ...
 
