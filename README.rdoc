@@ -17,11 +17,27 @@ git remote add origin git@github.com:kofik/mystor.git
 
 git push -u origin master
 
+
 git add -A
 
 git commit -am "small changes"
 
 git push -u origin master
+
+
+git tag -a 0.0.1 -m "Release of version 0.0.1"
+
+git push --tags
+
+
+git checkout -b spreeTwilio
+
+git commit -am 'Adding SMS feature'
+
+git push origin spreeTwilio
+
+git push -u origin spreeTwilio
+
 
 Things you may want to cover:
 
