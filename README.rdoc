@@ -36,7 +36,8 @@ git commit -am 'Adding SMS feature'
 
 git push origin spreeTwilio
 
-git push -u origin spreeTwilio
+
+git checkout -b version2 v2.0.0
 
 
 Things you may want to cover:
@@ -73,3 +74,24 @@ and the official documentation
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+rake doc:app
+
+ added this to the end of Rakefile:
+
+require 'sdoc'
+namespace :sdoc do
+  RDoc::Task.new(:app) do |rdoc|
+    rdoc.rdoc_dir = 'doc/app'
+
+    rdoc.options << '-e'  << 'UTF-8'
+    rdoc.options << '-f'  << 'sdoc'
+    rdoc.options << '-T'  << 'rails'
+
+    rdoc.rdoc_files.include('README.rdoc')
+    rdoc.rdoc_files.include('app/**/*.rb')
+    rdoc.rdoc_files.include('lib/**/*.rb')
+  end
+end
+And when I run rake sdoc:app it performs docgen twice (my task and original rake doc:app):
+
+
