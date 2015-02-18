@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>README.rdoc</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../css/main.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../css/github.css" type="text/css" media="screen" />
+<script src="../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>     
+    <div class="banner">
+        
+        <h1>
+            README.rdoc
+        </h1>
+        <ul class="files">
+            
+            <li>
+                README.rdoc
+                
+            </li>
+            <li>Last modified: 2015-01-24 02:23:32 +0100</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+  
+    <div class="description">
+      
+<h2 id="label-README"><a href="README_rdoc.html">README</a></h2>
+
+<p>This <a href="README_rdoc.html">README</a> would normally document whatever
+steps are necessary to get the application up and running.</p>
+
+<pre><code>Steps for new git user
+
+      echo &quot;# mystor&quot; &gt;&gt; README.md
+      git init
+      git add README.md
+      git commit -m &quot;first commit&quot;
+      git remote add origin git@github.com:kofik/mystor.git
+      git push -u origin master
+
+      git add -A
+      git commit -am &quot;small changes&quot;
+      git push -u origin master
+
+      git tag -a 0.0.1 -m &quot;Release of version 0.0.1&quot;
+      git push --tags
+
+      git checkout -b spreeTwilio
+      git commit -am &#39;Adding SMS feature&#39;
+      git push origin spreeTwilio</code></pre>
+
+<p>Things you may want to cover:</p>
+
+<pre><code> Ruby version
+       ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-linux-gnu]
+
+Rails version
+       4.1.8
+
+ System dependencies
+       Here Ubuntu Ruby Rails Spree
+
+ Configuration
+       gem &#39;spree_auth_devise&#39;, :git =&gt; &quot;git://github.com/spree/spree_auth_devise&quot;
+
+ Database creation at initial rails project
+       rails _4.1.8_ new mystor -d mysql
+ Database initialization
+
+ How to run the test suite
+       Test will be done with Cucumber
+
+ Services (job queues, cache servers, search engines, etc.)</code></pre>
+
+<p>Using default Webrick will be use Passenger and Cherokee Search engine to
+be use: solr</p>
+
+<pre><code> Deployment instructions
+       Read Ruby and Rails installation here 
+       and the official documentation
+
+Docs</code></pre>
+
+<p>Please feel free to use a different markup language if you do not plan to
+run_</p>
+
+<pre><code>rake doc:app
+
+Add this to the end of Rakefile:</code></pre>
+
+<p>require &#39;sdoc&#39; namespace :sdoc do</p>
+
+<pre><code>RDoc::Task.new(:app) do |rdoc|
+  rdoc.rdoc_dir = &#39;doc/app&#39;
+
+  rdoc.options &lt;&lt; &#39;-e&#39;  &lt;&lt; &#39;UTF-8&#39;
+  rdoc.options &lt;&lt; &#39;-f&#39;  &lt;&lt; &#39;sdoc&#39;
+  rdoc.options &lt;&lt; &#39;-T&#39;  &lt;&lt; &#39;rails&#39;
+
+  rdoc.rdoc_files.include(&#39;README.rdoc&#39;)
+  rdoc.rdoc_files.include(&#39;app   /*.rb&#39;)
+  rdoc.rdoc_files.include(&#39;lib/   *.rb&#39;)
+end
+</code></pre>
+
+<p>end</p>
+
+<p>And when I run</p>
+
+<pre><code>rake sdoc:app
+</code></pre>
+
+<p>It performs docgen twice my task and original rake doc:app</p>
+
+    </div>
+  
+
+
+  
+
+
+  
+  
+
+
+  
+
+
+  
+
+  
+
+
+
+  
+
+    
+
+    
+
+    
+
+
+    
+
+
+    <!-- Methods -->
+              </div>
+
+    </div>
+  </body>
+</html>
